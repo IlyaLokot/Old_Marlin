@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Old_Marlin/static/css/main.2a3181d2.css",
+    "main.js": "/Old_Marlin/static/js/main.0150bf7a.js",
+    "static/js/453.96453769.chunk.js": "/Old_Marlin/static/js/453.96453769.chunk.js",
+    "static/media/cyrillicOldFace.ttf": "/Old_Marlin/static/media/cyrillicOldFace.5b73976a2d7f7d0bcd47.ttf",
+    "static/media/cyrillicOld.ttf": "/Old_Marlin/static/media/cyrillicOld.285646a70f005205ccd2.ttf",
+    "static/media/beresta.jpg": "/Old_Marlin/static/media/beresta.61c48938ca5da77cfc80.jpg",
+    "index.html": "/Old_Marlin/index.html",
+    "main.2a3181d2.css.map": "/Old_Marlin/static/css/main.2a3181d2.css.map",
+    "main.0150bf7a.js.map": "/Old_Marlin/static/js/main.0150bf7a.js.map",
+    "453.96453769.chunk.js.map": "/Old_Marlin/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a3181d2.css",
+    "static/js/main.0150bf7a.js"
+  ]
+}
