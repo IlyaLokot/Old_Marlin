@@ -1,4 +1,3 @@
-import React from "react"
 import './Shop.css'
 
 
@@ -21,7 +20,7 @@ function Cart({ img, name, category, price, description, button, add }) {
       </div>
     </div>
   )
-}
+} 
 
 
 export default Cart
