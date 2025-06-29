@@ -1,0 +1,167 @@
+html,
+body {
+    background-image: url('/public/images/beresta.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+@font-face {
+    font-family: "Cyrillic Old Face";
+    src: url(../fonts/cyrillicOldFace.ttf);
+}
+
+@font-face {
+    font-family: "Cyrillic Old";
+    src: url(../fonts/cyrillicOld.ttf);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: #a8b19fc9;
+    font-family: "Cyrillic Old Face";
+}
+
+.content {
+    flex: 1;
+    margin: 30px 20px 20px 10px;
+}
+
+.catalog {
+    min-Height: 100vh;
+    padding: 24px;
+}
+
+.rubric {
+    font-family: 'Cyrillic Old';
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    color: red;
+    border: #35802e 4px solid;
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px rgb(68, 25, 109);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.56) 8%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 88%);
+    text-transform: uppercase;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.addbutton {
+    color: yellow;
+    align-self: center;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-left: auto;
+    align-items: end;
+    background-color: rgb(40, 63, 13);
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.addbutton:hover {
+    background-color: rgb(60, 100, 20);
+    transform: scale(1.1);
+}
+
+.cart {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    max-width: 300px;
+    min-width: 180px;
+    color: #f5f5f5;
+    padding: 10px;
+    margin: 6px;
+    border: 2px solid #473333;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(53, 43, 43, 0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(151, 53, 53);
+}
+
+.cart:hover {
+    transform: scale(1.1);
+    background-size: contain;
+}
+
+.grosh {
+    color: #ffd700;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    text-shadow: 1px 3px 5px black;
+    border-radius: 10px;
+    width: 35px;
+}
+
+.paybutton {
+    color: yellow;
+    align-self: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    background-color: rgb(40, 63, 13);
+    padding: 0px 7px 0px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.paybutton:hover {
+    transform: scale(1.1);
+    background-color: rgb(60, 100, 20);
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: auto;
+    text-shadow: 2px 2px 5px #201e1e;
+}
+
+.iconContacts {
+    margin: 10px; 
+    height: 60px;
+
+}
+.iconContacts :hover {
+    transform: scale(1.1);
+}
+
+.socialBlock{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px darkgreen double;
+}
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
