@@ -23,7 +23,7 @@ function Home({ news }) {
   return (
     <div >
       <div>
-        <img src="./images/Old_Marlin_logo.png" alt="" style={{ height: "300px", float: "left", margin: "20px" }} />
+        <img src="images/Old_Marlin_logo.png" alt="" style={{ height: "300px", float: "left", margin: "20px" }} />
         <h1 style={{ textAlign: 'center', }}>Добро пожаловать в рыцарский магазин!</h1>
       </div>
       <p>У нас есть всё: от ржавых мечей до магических зелий.</p>
