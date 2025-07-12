@@ -4,7 +4,7 @@ import './Shop.css'
 function Cart({ img, name, category, price, description, button, add }) {
   
   return (
-    <div className="cart" style={{ backgroundImage: `url(${img})` }} title={description}>
+    <div className="cart" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + img})` }} title={description}>
       <div className="tag">
         <h2>{name}</h2>
         <p style={{ fontStyle: "italic" }}>{category}</p>

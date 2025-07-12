@@ -10,9 +10,15 @@ function Navbar({ money }) {
       <Link to="/about">О нас</Link>
       <div style={{ display: 'flex', marginLeft: "auto", flexWrap: 'nowrap'}}>
         <span style={{ fontFamily: 'Cyrillic Old', marginRight: '40px' }}> {money} ₼ </span>
-        <a href='https://www.youtube.com' > <img src='./images/YouTube.png' style={{ width: "40px" }} title='Да нахуй этот сайт пашли ютубчик глянем' alt='Ш'/></a>
+        <a href='https://www.youtube.com'>
+          <img
+            src={process.env.PUBLIC_URL + "/images/YouTube.png"}
+            style={{ width: "40px" }}
+            title='Да нахуй этот сайт пашли ютубчик глянем'
+            alt="YT"
+          />
+        </a>
       </div>
-
     </nav>
   )
 }

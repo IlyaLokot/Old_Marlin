@@ -1,4 +1,3 @@
-import { React, useState } from 'react'
 import './Shop.css'
 import Cart from './Cart'
 
@@ -7,7 +6,7 @@ import Cart from './Cart'
 const armors = [
     {
         id: 1,
-        img: "item_images/stupid_paladin_s_helmet.jpg",
+        img: "/item_images/stupid_paladin_s_helmet.jpg",
         name: "Шлем глупого паладина",
         category: "Шлем",
         price: 120,
@@ -16,7 +15,7 @@ const armors = [
     },
     {
         id: 2,
-        img: "item_images/helmet_bear_s_head.jpg",
+        img: "/item_images/helmet_bear_s_head.jpg",
         name: "Медвежья башка",
         category: "Шлем",
         price: 250,
@@ -25,7 +24,7 @@ const armors = [
     },
     {
         id: 3,
-        img: "item_images/helmet_bucket.jpg",
+        img: "/item_images/helmet_bucket.jpg",
         name: "Медный таз",
         category: "Шлем",
         price: 30,
@@ -34,7 +33,7 @@ const armors = [
     },
     {
         id: 4,
-        img: "item_images/dad_s_armor.jpg",
+        img: "/item_images/dad_s_armor.jpg",
         name: "Кольчуга деда",
         category: "Доспех",
         price: 180,
@@ -43,7 +42,7 @@ const armors = [
     },
     {
         id: 5,
-        img: "item_images/leather_armor.jpg",
+        img: "/item_images/leather_armor.jpg",
         name: "Кожаный нагрудник",
         category: "Доспех",
         price: 90,
@@ -52,7 +51,7 @@ const armors = [
     },
     {
         id: 6,
-        img: "item_images/metallic_armor.jpg",
+        img: "/item_images/metallic_armor.jpg",
         name: "Пластины забвения",
         category: "Доспех",
         price: 520,
@@ -61,7 +60,7 @@ const armors = [
     },
     {
         id: 7,
-        img: "item_images/leather_cuisses.jpeg",
+        img: "/item_images/leather_cuisses.jpeg",
         name: "Бахилы монаха",
         category: "Поножи",
         price: 60,
@@ -70,7 +69,7 @@ const armors = [
     },
     {
         id: 8,
-        img: "item_images/dirty_cuisses.jpg",
+        img: "/item_images/dirty_cuisses.jpg",
         name: "Кожаные поножи",
         category: "Поножи",
         price: 110,
@@ -79,7 +78,7 @@ const armors = [
     },
     {
         id: 9,
-        img: "item_images/cuisses_of_centaur.jpg",
+        img: "/item_images/cuisses_of_centaur.jpg",
         name: "Ноги кентавра",
         category: "Поножи",
         price: 190,
@@ -92,7 +91,7 @@ const armors = [
 const weapons = [
     {
         id: 10,
-        img: "item_images/rusty_sword.jpg",
+        img: "/item_images/rusty_sword.jpg",
         name: "Ржавый меч",
         category: "Клинковое",
         price: 70,
@@ -101,7 +100,7 @@ const weapons = [
     },
     {
         id: 11,
-        img: "item_images/sword_of_cilence.jpg",
+        img: "/item_images/sword_of_cilence.jpg",
         name: "Клинок молчания",
         category: "Клинковое",
         price: 220,
@@ -110,7 +109,7 @@ const weapons = [
     },
     {
         id: 12,
-        img: "item_images/plastic_sword.jpg",
+        img: "/item_images/plastic_sword.jpg",
         name: "Засадная сабля",
         category: "Клинковое",
         price: 25,
@@ -119,7 +118,7 @@ const weapons = [
     },
     {
         id: 13,
-        img: "item_images/giant_mace.jpg",
+        img: "/item_images/giant_mace.jpg",
         name: "Орочья дубина",
         category: "Дробящее",
         price: 130,
@@ -128,7 +127,7 @@ const weapons = [
     },
     {
         id: 14,
-        img: "item_images/hammer.jpg",
+        img: "/item_images/hammer.jpg",
         name: "Молот правосудия",
         category: "Дробящее",
         price: 270,
@@ -137,7 +136,7 @@ const weapons = [
     },
     {
         id: 15,
-        img: "item_images/nice_stik.jpg",
+        img: "/item_images/nice_stik.jpg",
         name: "Дубинка сторожа",
         category: "Дробящее",
         price: 90,
@@ -146,7 +145,7 @@ const weapons = [
     },
     {
         id: 16,
-        img: "item_images/spear.jpg",
+        img: "/item_images/spear.jpg",
         name: "Копьё простолюдина",
         category: "Древковое",
         price: 80,
@@ -155,7 +154,7 @@ const weapons = [
     },
     {
         id: 17,
-        img: "item_images/hamberg.jpg",
+        img: "/item_images/hamberg.jpg",
         name: "Алебарда 'Гроза ног'",
         category: "Древковое",
         price: 240,
@@ -164,7 +163,7 @@ const weapons = [
     },
     {
         id: 18,
-        img: "item_images/stikle.jpg",
+        img: "/item_images/stikle.jpg",
         name: "Коса молчания",
         category: "Древковое",
         price: 210,
@@ -178,6 +177,7 @@ const potions = [
     {
         id: 19,
         name: "Ночное зрение +5",
+        img: "item_images/potion_night_vision.jpg",
         category: "Зелье",
         price: 100,
         description: "Видишь в темноте. Даже то, что не хотел",
@@ -186,6 +186,7 @@ const potions = [
     {
         id: 20,
         name: "Зелье силы",
+        img: "item_images/potion_strength.jpg",
         category: "Зелье",
         price: 140,
         description: "Ты крушишь. Потом отрубаешься",
@@ -194,6 +195,7 @@ const potions = [
     {
         id: 21,
         name: "Живой снова",
+        img: "item_images/potion_revive.jpg",
         category: "Зелье",
         price: 180,
         description: "Полностью лечит, но может стать зомби",
@@ -202,6 +204,7 @@ const potions = [
     {
         id: 22,
         name: "Эликсир выносливости",
+        img: "item_images/potion_stamina.jpg",
         category: "Зелье",
         price: 110,
         description: "Бегаешь как бешеный барсук",
@@ -265,13 +268,11 @@ const clothes = [
         category: "Обувь",
         price: 130,
         description: "Прыжок как у сайгака",
-        section: "Одежда"
     },
-
-    // 🧢 Головные уборы
     {
         id: 29,
         name: "Капюшон грусти",
+        img: "item_images/hood_sadness.jpg",
         category: "Головной убор",
         price: 35,
         description: "Ты в нем будто уже проиграл",
@@ -280,6 +281,7 @@ const clothes = [
     {
         id: 30,
         name: "Цилиндр колдуна",
+        img: "item_images/wizard_hat.jpg",
         category: "Головной убор",
         price: 95,
         description: "Пахнет пеплом и проклятием",
@@ -288,6 +290,7 @@ const clothes = [
     {
         id: 31,
         name: "Берет поэта",
+        img: "item_images/poet_beret.jpg",
         category: "Головной убор",
         price: 50,
         description: "Легко отлетает от ветра и пощёчины",
